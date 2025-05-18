@@ -1,0 +1,41 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:22:29
+
+File: /home/t3rex/LOAD/uploads/sample.doc
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:21:35+02:00
+File:FileInodeChangeDate: 2025:05:18 12:22:29+02:00
+File:FileModifyDate: 2025:05:18 12:22:29+02:00
+File:FileName: sample.doc
+File:FilePermissions: 100664
+File:FileSize: 9216
+File:FileType: DOC
+File:FileTypeExtension: DOC
+File:MIMEType: application/msword
+FileGroup: 1000
+FileHash: f6627a82a8cfe690ba43a2c8267276023eb3817fe992525cb18c2e36f076e15c
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 9.00 KB
+FlashPix:Characters: 53
+FlashPix:CodePage: 65001
+FlashPix:CompObjUserType: Microsoft Word-Dokument
+FlashPix:CompObjUserTypeLen: 24
+FlashPix:CreateDate: 2025:05:18 10:15:01
+FlashPix:DocFlags: 4608
+FlashPix:Identification: 42476
+FlashPix:LanguageCode: 1033
+FlashPix:LastPrinted: 0000:00:00 00:00:00
+FlashPix:Lines: 1
+FlashPix:ModifyDate: 2025:05:18 10:16:58
+FlashPix:Pages: 1
+FlashPix:Paragraphs: 1
+FlashPix:RevisionNumber: 1
+FlashPix:System: 0
+FlashPix:TotalEditTime: 0
+FlashPix:Word97: 0
+FlashPix:Words: 7
+SourceFile: /home/t3rex/LOAD/uploads/sample.doc
+

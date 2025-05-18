@@ -1,0 +1,75 @@
+Oto przykładowy **prompt (opis funkcjonalny)**, który możesz wykorzystać jako specyfikację lub brief do stworzenia aplikacji webowej w Pythonie, działającej lokalnie i gotowej do przyszłego wdrożenia online:
+
+---
+
+### 🎯 **Prompt: Aplikacja webowa do analizy metadanych plików (Python + ExifTool)**
+
+#### 🧩 **Opis ogólny:**
+
+Stwórz aplikację webową w języku **Python 3**, działającą lokalnie (na `localhost`), która umożliwia **analizę metadanych plików** z użyciem narzędzia **ExifTool**. Aplikacja powinna być zaprojektowana w sposób modułowy, umożliwiający łatwe przeniesienie jej do środowiska produkcyjnego (np. Heroku, Render, AWS, itp.).
+
+#### 🔧 **Technologie:**
+
+* Backend: **Python 3**, framework **Flask** (lub **FastAPI**)
+* Frontend: HTML/CSS + JS (lub prosty template z Bootstrap)
+* Wczytywanie i analiza plików: **ExifTool** (wywoływany jako proces zewnętrzny)
+* Eksport danych: **pdfkit** lub **reportlab** (dla PDF), standardowy zapis dla `.txt`
+
+#### 📂 **Obsługiwane formaty plików:**
+
+* Dokumenty: `.txt`, `.doc`, `.docx`, `.pdf`
+* Obrazy: `.png`, `.jpg`, `.bmp`
+
+#### ✅ **Funkcjonalności:**
+
+1. **Wgrywanie plików:**
+
+   * Możliwość jednoczesnego wgrania wielu plików (batch mode).
+   * Walidacja typów plików na poziomie frontendu i backendu.
+
+2. **Analiza metadanych:**
+
+   * Dla każdego pliku uruchomienie `exiftool` i pobranie metadanych.
+   * Prezentacja wyników w formie:
+
+     * Tabelarycznej (np. klucz – wartość)
+     * Sekcyjnej (np. podział wg typu metadanych: EXIF, IPTC, PDF Info itd.)
+
+3. **Raport zbiorczy:**
+
+   * Zbiorcze zestawienie metadanych dla wszystkich przesłanych plików.
+   * Możliwość pobrania raportu w formacie:
+
+     * `.txt`
+     * `.pdf`
+
+4. **Brak systemu użytkowników:**
+
+   * Aplikacja nie wymaga rejestracji ani logowania.
+   * Działa lokalnie na `localhost`, dostępna przez przeglądarkę.
+
+5. **Dodatkowe:**
+
+   * Estetyczny, prosty interfejs użytkownika.
+   * Komunikaty błędów w przypadku nieobsługiwanych formatów lub błędów w pliku.
+   * Kod przygotowany do łatwej konteneryzacji (np. plik `Dockerfile`).
+
+---
+
+### 📁 Przykładowa struktura projektu:
+
+```
+exiftool_webapp/
+│
+├── app.py                  # Główna aplikacja Flask/FastAPI
+├── templates/              # Pliki HTML (np. Jinja2)
+├── static/                 # CSS/JS
+├── uploads/                # Tymczasowe pliki użytkownika
+├── reports/                # Wygenerowane raporty PDF/TXT
+├── utils.py                # Obsługa exiftool i eksportów
+├── requirements.txt        # Zależności Pythona
+└── README.md
+```
+
+Chcesz, żebym przygotował gotowy kod szkieletu aplikacji Flask z takimi funkcjami?
+

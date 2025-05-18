@@ -1,0 +1,29 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-16 11:28:02
+
+File: /home/t3rex/LOAD/uploads/prompt.txt
+
+ExifTool:ExifToolVersion: 12.4
+File:ByteOrderMark: 0
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:16 11:18:50+02:00
+File:FileInodeChangeDate: 2025:05:16 11:28:01+02:00
+File:FileModifyDate: 2025:05:16 11:28:01+02:00
+File:FileName: prompt.txt
+File:FilePermissions: 100664
+File:FileSize: 2761
+File:FileType: TXT
+File:FileTypeExtension: TXT
+File:LineCount: 75
+File:MIMEEncoding: utf-8
+File:MIMEType: text/plain
+File:Newlines: 
+
+File:WordCount: 330
+FileGroup: 1000
+FileHash: 901fb6602d2aca816ad0a0ddfd83dcbcfb535a0e58e8bf4606ffaefef0b91ebe
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 2.70 KB
+SourceFile: /home/t3rex/LOAD/uploads/prompt.txt
+

@@ -1,0 +1,280 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-16 11:34:07
+
+File: /home/t3rex/LOAD/uploads/Fotka2.jpg
+
+Composite:Aperture: 4
+Composite:CircleOfConfusion: 0.0300462606288666
+Composite:DateTimeCreated: 2018:09:09 18:10:14
+Composite:DigitalCreationDateTime: 2018:09:09 18:10:14
+Composite:FOV: 54.4322690915858
+Composite:FocalLength35efl: 35
+Composite:HyperfocalDistance: 10.1926161056386
+Composite:ImageSize: 1200 800
+Composite:LensID: FE 35mm F2.8 ZA
+Composite:LightValue: 11.6438561897747
+Composite:Megapixels: 0.96
+Composite:ScaleFactor35efl: 1
+Composite:ShutterSpeed: 0.0025
+Composite:SubSecModifyDate: 2020:11:21 19:16:06+01:00
+EXIF:ApertureValue: 4
+EXIF:BrightnessValue: 6.6890625
+EXIF:ColorSpace: 1
+EXIF:Compression: 6
+EXIF:Contrast: 0
+EXIF:CreateDate: 2018:09:09 18:10:14
+EXIF:CustomRendered: 0
+EXIF:DateTimeOriginal: 2018:09:09 18:10:14
+EXIF:DigitalZoomRatio: 1
+EXIF:ExifImageHeight: 800
+EXIF:ExifImageWidth: 1200
+EXIF:ExifVersion: 0231
+EXIF:ExposureCompensation: 0
+EXIF:ExposureMode: 0
+EXIF:ExposureProgram: 3
+EXIF:ExposureTime: 0.0025
+EXIF:FNumber: 4
+EXIF:FileSource: 3
+EXIF:Flash: 16
+EXIF:FlashpixVersion: 0100
+EXIF:FocalLength: 35
+EXIF:FocalLengthIn35mmFormat: 35
+EXIF:FocalPlaneResolutionUnit: 3
+EXIF:FocalPlaneXResolution: 1675.257385
+EXIF:FocalPlaneYResolution: 1675.257385
+EXIF:ISO: 200
+EXIF:LensInfo: 35 35 2.8 2.8
+EXIF:LensModel: FE 35mm F2.8 ZA
+EXIF:LightSource: 0
+EXIF:Make: SONY
+EXIF:MaxApertureValue: 2.79795934507662
+EXIF:MeteringMode: 2
+EXIF:Model: ILCE-7M2
+EXIF:ModifyDate: 2020:11:21 19:16:06
+EXIF:OffsetTime: +01:00
+EXIF:Orientation: 1
+EXIF:RecommendedExposureIndex: 200
+EXIF:ResolutionUnit: 2
+EXIF:Saturation: 0
+EXIF:SceneCaptureType: 0
+EXIF:SceneType: 1
+EXIF:SensitivityType: 2
+EXIF:Sharpness: 0
+EXIF:ShutterSpeedValue: 0.00250000032885456
+EXIF:Software: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)
+EXIF:ThumbnailImage: (Binary data 11365 bytes, use -b option to extract)
+EXIF:ThumbnailLength: 11365
+EXIF:ThumbnailOffset: 990
+EXIF:WhiteBalance: 0
+EXIF:XResolution: 240
+EXIF:YResolution: 240
+ExifTool:ExifToolVersion: 12.4
+File:BitsPerSample: 8
+File:ColorComponents: 3
+File:CurrentIPTCDigest: a9799b60c012e5543920ae56e4508d6d
+File:Directory: /home/t3rex/LOAD/uploads
+File:EncodingProcess: 0
+File:ExifByteOrder: II
+File:FileAccessDate: 2025:05:16 11:29:26+02:00
+File:FileInodeChangeDate: 2025:05:16 11:34:07+02:00
+File:FileModifyDate: 2025:05:16 11:34:07+02:00
+File:FileName: Fotka2.jpg
+File:FilePermissions: 100664
+File:FileSize: 217255
+File:FileType: JPEG
+File:FileTypeExtension: JPG
+File:ImageHeight: 800
+File:ImageWidth: 1200
+File:MIMEType: image/jpeg
+File:YCbCrSubSampling: 2 2
+FileGroup: 1000
+FileHash: e7f91c4a3993f55837da7b609f1904269862e49ea45df03e70f4a38f7cda5264
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 212.16 KB
+ICC_Profile:BlueMatrixColumn: 0.14307 0.06061 0.7141
+ICC_Profile:BlueTRC: (Binary data 2060 bytes, use -b option to extract)
+ICC_Profile:CMMFlags: 0
+ICC_Profile:ColorSpaceData: RGB 
+ICC_Profile:ConnectionSpaceIlluminant: 0.9642 1 0.82491
+ICC_Profile:DeviceAttributes: 0 0
+ICC_Profile:DeviceManufacturer: IEC 
+ICC_Profile:DeviceMfgDesc: IEC http://www.iec.ch
+ICC_Profile:DeviceModel: sRGB
+ICC_Profile:DeviceModelDesc: IEC 61966-2.1 Default RGB colour space - sRGB
+ICC_Profile:GreenMatrixColumn: 0.38515 0.71687 0.09708
+ICC_Profile:GreenTRC: (Binary data 2060 bytes, use -b option to extract)
+ICC_Profile:Luminance: 76.03647 80 87.12462
+ICC_Profile:MeasurementBacking: 0 0 0
+ICC_Profile:MeasurementFlare: 0.00999
+ICC_Profile:MeasurementGeometry: 0
+ICC_Profile:MeasurementIlluminant: 2
+ICC_Profile:MeasurementObserver: 1
+ICC_Profile:MediaBlackPoint: 0 0 0
+ICC_Profile:MediaWhitePoint: 0.95045 1 1.08905
+ICC_Profile:PrimaryPlatform: MSFT
+ICC_Profile:ProfileCMMType: Lino
+ICC_Profile:ProfileClass: mntr
+ICC_Profile:ProfileConnectionSpace: XYZ 
+ICC_Profile:ProfileCopyright: Copyright (c) 1998 Hewlett-Packard Company
+ICC_Profile:ProfileCreator: HP  
+ICC_Profile:ProfileDateTime: 1998:02:09 06:49:00
+ICC_Profile:ProfileDescription: sRGB IEC61966-2.1
+ICC_Profile:ProfileFileSignature: acsp
+ICC_Profile:ProfileID: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ICC_Profile:ProfileVersion: 528
+ICC_Profile:RedMatrixColumn: 0.43607 0.22249 0.01392
+ICC_Profile:RedTRC: (Binary data 2060 bytes, use -b option to extract)
+ICC_Profile:RenderingIntent: 0
+ICC_Profile:Technology: CRT 
+ICC_Profile:ViewingCondDesc: Reference Viewing Condition in IEC61966-2.1
+ICC_Profile:ViewingCondIlluminant: 19.6445 20.3718 16.8089
+ICC_Profile:ViewingCondIlluminantType: 1
+ICC_Profile:ViewingCondSurround: 3.92889 4.07439 3.36179
+IPTC:ApplicationRecordVersion: 4
+IPTC:CodedCharacterSet: %G
+IPTC:DateCreated: 2018:09:09
+IPTC:DigitalCreationDate: 2018:09:09
+IPTC:DigitalCreationTime: 18:10:14
+IPTC:TimeCreated: 18:10:14
+Photoshop:DisplayedUnitsX: 1
+Photoshop:DisplayedUnitsY: 1
+Photoshop:IPTCDigest: a9799b60c012e5543920ae56e4508d6d
+Photoshop:PhotoshopThumbnail: (Binary data 11365 bytes, use -b option to extract)
+Photoshop:XResolution: 240
+Photoshop:YResolution: 240
+SourceFile: /home/t3rex/LOAD/uploads/Fotka2.jpg
+XMP:AlreadyApplied: True
+XMP:AutoLateralCA: 0
+XMP:Blacks2012: +24
+XMP:BlueHue: 0
+XMP:BlueSaturation: 0
+XMP:CameraProfile: Adobe Standard
+XMP:CameraProfileDigest: 24DB427054E183A10DED3CF64B3851FA
+XMP:Clarity2012: 0
+XMP:ColorGradeBlending: 100
+XMP:ColorGradeGlobalHue: 0
+XMP:ColorGradeGlobalLum: 0
+XMP:ColorGradeGlobalSat: 0
+XMP:ColorGradeHighlightLum: 0
+XMP:ColorGradeMidtoneHue: 0
+XMP:ColorGradeMidtoneLum: 0
+XMP:ColorGradeMidtoneSat: 0
+XMP:ColorGradeShadowLum: 0
+XMP:ColorNoiseReduction: 25
+XMP:ColorNoiseReductionDetail: 50
+XMP:ColorNoiseReductionSmoothness: 50
+XMP:ColorTemperature: 6950
+XMP:Contrast2012: 0
+XMP:CreateDate: 2018:09:09 18:10:14
+XMP:CreatorTool: Adobe Photoshop Lightroom Classic 10.0 (Macintosh)
+XMP:CropAngle: 0
+XMP:CropBottom: 0.963386
+XMP:CropConstrainToWarp: 0
+XMP:CropLeft: 0.082387
+XMP:CropRight: 0.874577
+XMP:CropTop: 0.171196
+XMP:DateCreated: 2018:09:09 18:10:14
+XMP:DefringeGreenAmount: 0
+XMP:DefringeGreenHueHi: 60
+XMP:DefringeGreenHueLo: 40
+XMP:DefringePurpleAmount: 0
+XMP:DefringePurpleHueHi: 70
+XMP:DefringePurpleHueLo: 30
+XMP:Dehaze: 0
+XMP:DerivedFrom: {'DocumentID': '9CF17605BC4D6A794172CF0765227B79', 'OriginalDocumentID': '9CF17605BC4D6A794172CF0765227B79'}
+XMP:DocumentID: xmp.did:617753a8-475c-4fbc-999c-d20aa3e6265c
+XMP:Exposure2012: +0.40
+XMP:Format: image/jpeg
+XMP:GrainAmount: 0
+XMP:GreenHue: 0
+XMP:GreenSaturation: 0
+XMP:HasCrop: True
+XMP:HasSettings: True
+XMP:Highlights2012: -51
+XMP:History: [{'Action': 'derived', 'Parameters': 'converted from image/x-sony-arw to image/jpeg, saved to new location'}, {'Action': 'saved', 'Changed': '/', 'InstanceID': 'xmp.iid:617753a8-475c-4fbc-999c-d20aa3e6265c', 'SoftwareAgent': 'Adobe Photoshop Lightroom Classic 10.0 (Macintosh)', 'When': '2020:11:21 19:16:06+01:00'}]
+XMP:HueAdjustmentAqua: 0
+XMP:HueAdjustmentBlue: 0
+XMP:HueAdjustmentGreen: 0
+XMP:HueAdjustmentMagenta: 0
+XMP:HueAdjustmentOrange: 0
+XMP:HueAdjustmentPurple: 0
+XMP:HueAdjustmentRed: 0
+XMP:HueAdjustmentYellow: 0
+XMP:InstanceID: xmp.iid:617753a8-475c-4fbc-999c-d20aa3e6265c
+XMP:LateralChromaticAberrationCorrectionAlreadyApplied: True
+XMP:Lens: FE 35mm F2.8 ZA
+XMP:LensDistortInfo: 1071028007/1073741824 16878674/1073741824 -26418787/1073741824 -666838/1073741824
+XMP:LensInfo: 35 35 2.8 2.8
+XMP:LensManualDistortionAmount: 0
+XMP:LensModel: FE 35mm F2.8 ZA
+XMP:LensProfileEnable: 0
+XMP:Look: {'Amount': 1.0, 'Group': 'Profiles', 'Name': 'Adobe Color', 'Parameters': {'CameraProfile': 'Adobe Standard', 'ConvertToGrayscale': False, 'LookTable': 'E1095149FDB39D7A057BAB208837E2E1', 'ProcessVersion': 11.0, 'ToneCurvePV2012': ['0, 0', '22, 16', '40, 35', '127, 127', '224, 230', '240, 246', '255, 255'], 'ToneCurvePV2012Blue': ['0, 0', '255, 255'], 'ToneCurvePV2012Green': ['0, 0', '255, 255'], 'ToneCurvePV2012Red': ['0, 0', '255, 255'], 'Version': 13.0}, 'SupportsAmount': False, 'SupportsMonochrome': False, 'SupportsOutputReferred': False, 'UUID': 'B952C231111CD8E0ECCF14B86BAA7077'}
+XMP:LuminanceAdjustmentAqua: 0
+XMP:LuminanceAdjustmentBlue: 0
+XMP:LuminanceAdjustmentGreen: 0
+XMP:LuminanceAdjustmentMagenta: 0
+XMP:LuminanceAdjustmentOrange: 0
+XMP:LuminanceAdjustmentPurple: 0
+XMP:LuminanceAdjustmentRed: 0
+XMP:LuminanceAdjustmentYellow: 0
+XMP:LuminanceSmoothing: 0
+XMP:MetadataDate: 2020:11:21 19:16:06+01:00
+XMP:ModifyDate: 2020:11:21 19:16:06+01:00
+XMP:OriginalDocumentID: 9CF17605BC4D6A794172CF0765227B79
+XMP:OverrideLookVignette: False
+XMP:ParametricDarks: 0
+XMP:ParametricHighlightSplit: 75
+XMP:ParametricHighlights: 0
+XMP:ParametricLights: 0
+XMP:ParametricMidtoneSplit: 50
+XMP:ParametricShadowSplit: 25
+XMP:ParametricShadows: 0
+XMP:PerspectiveAspect: 0
+XMP:PerspectiveHorizontal: 0
+XMP:PerspectiveRotate: 0.0
+XMP:PerspectiveScale: 100
+XMP:PerspectiveUpright: 0
+XMP:PerspectiveVertical: 0
+XMP:PerspectiveX: 0.0
+XMP:PerspectiveY: 0.0
+XMP:PostCropVignetteAmount: 0
+XMP:PreservedFileName: DSC08628.ARW
+XMP:ProcessVersion: 11.0
+XMP:RawFileName: DSC08628.ARW
+XMP:RedHue: 0
+XMP:RedSaturation: 0
+XMP:Saturation: 0
+XMP:SaturationAdjustmentAqua: 0
+XMP:SaturationAdjustmentBlue: -34
+XMP:SaturationAdjustmentGreen: 0
+XMP:SaturationAdjustmentMagenta: -54
+XMP:SaturationAdjustmentOrange: +9
+XMP:SaturationAdjustmentPurple: -73
+XMP:SaturationAdjustmentRed: -55
+XMP:SaturationAdjustmentYellow: -65
+XMP:ShadowTint: 0
+XMP:Shadows2012: +51
+XMP:SharpenDetail: 25
+XMP:SharpenEdgeMasking: 0
+XMP:SharpenRadius: +1.0
+XMP:Sharpness: 40
+XMP:SplitToningBalance: 0
+XMP:SplitToningHighlightHue: 210
+XMP:SplitToningHighlightSaturation: 11
+XMP:SplitToningShadowHue: 210
+XMP:SplitToningShadowSaturation: 7
+XMP:Texture: 0
+XMP:Tint: +5
+XMP:ToneCurveName2012: Custom
+XMP:ToneCurvePV2012: ['0, 34', '55, 57', '113, 106', '192, 196', '255, 255']
+XMP:ToneCurvePV2012Blue: ['0, 0', '53, 32', '116, 122', '183, 198', '255, 255']
+XMP:ToneCurvePV2012Green: ['0, 0', '46, 19', '122, 126', '188, 204', '255, 255']
+XMP:ToneCurvePV2012Red: ['0, 0', '48, 21', '112, 106', '188, 207', '255, 255']
+XMP:Version: 13.0
+XMP:Vibrance: 0
+XMP:VignetteAmount: 0
+XMP:WhiteBalance: Custom
+XMP:Whites2012: -31
+XMP:XMPToolkit: Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        
+

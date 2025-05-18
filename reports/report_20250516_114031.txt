@@ -1,0 +1,28 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-16 11:40:31
+
+File: /home/t3rex/LOAD/uploads/requirements.txt
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:16 11:40:30+02:00
+File:FileInodeChangeDate: 2025:05:16 11:40:30+02:00
+File:FileModifyDate: 2025:05:16 11:40:30+02:00
+File:FileName: requirements.txt
+File:FilePermissions: 100664
+File:FileSize: 88
+File:FileType: TXT
+File:FileTypeExtension: TXT
+File:LineCount: 5
+File:MIMEEncoding: us-ascii
+File:MIMEType: text/plain
+File:Newlines: 
+
+File:WordCount: 5
+FileGroup: 1000
+FileHash: 83f3c39b300f9433f2b27fe01e0695d3e6fd56de948dabcca73571389439e5d1
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 88 B
+SourceFile: /home/t3rex/LOAD/uploads/requirements.txt
+

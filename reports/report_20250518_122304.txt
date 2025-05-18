@@ -1,0 +1,35 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:23:04
+
+File: /home/t3rex/LOAD/uploads/sample.png
+
+Composite:ImageSize: 1210 909
+Composite:Megapixels: 1.09989
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:21:34+02:00
+File:FileInodeChangeDate: 2025:05:18 12:23:04+02:00
+File:FileModifyDate: 2025:05:18 12:23:04+02:00
+File:FileName: sample.png
+File:FilePermissions: 100664
+File:FileSize: 48085
+File:FileType: PNG
+File:FileTypeExtension: PNG
+File:MIMEType: image/png
+FileGroup: 1000
+FileHash: b98d7de914027cdc6961d8a7f217a15e05df82cc771bf426cac0da46c7e2b6d6
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 46.96 KB
+PNG:BitDepth: 8
+PNG:ColorType: 6
+PNG:Compression: 0
+PNG:CreationTime: nie, 18 maj 2025, 12:18:35
+PNG:Filter: 0
+PNG:ImageHeight: 909
+PNG:ImageWidth: 1210
+PNG:Interlace: 0
+PNG:SignificantBits: 8 8 8 8
+PNG:Software: gnome-screenshot
+SourceFile: /home/t3rex/LOAD/uploads/sample.png
+

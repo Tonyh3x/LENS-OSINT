@@ -1,0 +1,35 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:22:51
+
+File: /home/t3rex/LOAD/uploads/report_20250516_105951.pdf
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:22:51+02:00
+File:FileInodeChangeDate: 2025:05:18 12:22:51+02:00
+File:FileModifyDate: 2025:05:18 12:22:51+02:00
+File:FileName: report_20250516_105951.pdf
+File:FilePermissions: 100664
+File:FileSize: 20820
+File:FileType: PDF
+File:FileTypeExtension: PDF
+File:MIMEType: application/pdf
+FileGroup: 1000
+FileHash: 8e3abf407bfbc3d2f853354c65295b4a6ba49867ceda4080c7f21e6013d77f30
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 20.33 KB
+PDF:Author: (anonymous)
+PDF:CreateDate: 2025:05:16 10:59:51-01:00
+PDF:Creator: (unspecified)
+PDF:Linearized: False
+PDF:ModifyDate: 2025:05:16 10:59:51-01:00
+PDF:PDFVersion: 1.4
+PDF:PageCount: 12
+PDF:PageMode: UseNone
+PDF:Producer: ReportLab PDF Library - www.reportlab.com
+PDF:Subject: (unspecified)
+PDF:Title: (anonymous)
+PDF:Trapped: False
+SourceFile: /home/t3rex/LOAD/uploads/report_20250516_105951.pdf
+

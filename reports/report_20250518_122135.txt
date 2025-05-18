@@ -1,0 +1,145 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:21:35
+
+File: /home/t3rex/LOAD/uploads/sample.png
+
+Composite:ImageSize: 1210 909
+Composite:Megapixels: 1.09989
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:21:34+02:00
+File:FileInodeChangeDate: 2025:05:18 12:21:34+02:00
+File:FileModifyDate: 2025:05:18 12:21:34+02:00
+File:FileName: sample.png
+File:FilePermissions: 100664
+File:FileSize: 48085
+File:FileType: PNG
+File:FileTypeExtension: PNG
+File:MIMEType: image/png
+FileGroup: 1000
+FileHash: b98d7de914027cdc6961d8a7f217a15e05df82cc771bf426cac0da46c7e2b6d6
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 46.96 KB
+PNG:BitDepth: 8
+PNG:ColorType: 6
+PNG:Compression: 0
+PNG:CreationTime: nie, 18 maj 2025, 12:18:35
+PNG:Filter: 0
+PNG:ImageHeight: 909
+PNG:ImageWidth: 1210
+PNG:Interlace: 0
+PNG:SignificantBits: 8 8 8 8
+PNG:Software: gnome-screenshot
+SourceFile: /home/t3rex/LOAD/uploads/sample.png
+
+File: /home/t3rex/LOAD/uploads/sample.txt
+
+ExifTool:ExifToolVersion: 12.4
+File:ByteOrderMark: 1
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:17:52+02:00
+File:FileInodeChangeDate: 2025:05:18 12:21:34+02:00
+File:FileModifyDate: 2025:05:18 12:21:34+02:00
+File:FileName: sample.txt
+File:FilePermissions: 100664
+File:FileSize: 59
+File:FileType: TXT
+File:FileTypeExtension: TXT
+File:LineCount: 1
+File:MIMEEncoding: utf-8
+File:MIMEType: text/plain
+File:Newlines: 
+
+File:WordCount: 7
+FileGroup: 1000
+FileHash: c6479f241bfdfd4f8654b33092f6b0b2590f513a1560f7fdeadeb22546b486d3
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 59 B
+SourceFile: /home/t3rex/LOAD/uploads/sample.txt
+
+File: /home/t3rex/LOAD/uploads/sample.doc
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:17:21+02:00
+File:FileInodeChangeDate: 2025:05:18 12:21:34+02:00
+File:FileModifyDate: 2025:05:18 12:21:34+02:00
+File:FileName: sample.doc
+File:FilePermissions: 100664
+File:FileSize: 9216
+File:FileType: DOC
+File:FileTypeExtension: DOC
+File:MIMEType: application/msword
+FileGroup: 1000
+FileHash: f6627a82a8cfe690ba43a2c8267276023eb3817fe992525cb18c2e36f076e15c
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 9.00 KB
+FlashPix:Characters: 53
+FlashPix:CodePage: 65001
+FlashPix:CompObjUserType: Microsoft Word-Dokument
+FlashPix:CompObjUserTypeLen: 24
+FlashPix:CreateDate: 2025:05:18 10:15:01
+FlashPix:DocFlags: 4608
+FlashPix:Identification: 42476
+FlashPix:LanguageCode: 1033
+FlashPix:LastPrinted: 0000:00:00 00:00:00
+FlashPix:Lines: 1
+FlashPix:ModifyDate: 2025:05:18 10:16:58
+FlashPix:Pages: 1
+FlashPix:Paragraphs: 1
+FlashPix:RevisionNumber: 1
+FlashPix:System: 0
+FlashPix:TotalEditTime: 0
+FlashPix:Word97: 0
+FlashPix:Words: 7
+SourceFile: /home/t3rex/LOAD/uploads/sample.doc
+
+File: /home/t3rex/LOAD/uploads/sample.docx
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:16:59+02:00
+File:FileInodeChangeDate: 2025:05:18 12:21:35+02:00
+File:FileModifyDate: 2025:05:18 12:21:35+02:00
+File:FileName: sample.docx
+File:FilePermissions: 100664
+File:FileSize: 4316
+File:FileType: DOCX
+File:FileTypeExtension: DOCX
+File:MIMEType: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+FileGroup: 1000
+FileHash: 94be8b56db4905e689bbe79a579dc1e0a002c3f1fdb04e4c076cb9c94bacb054
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 4.21 KB
+SourceFile: /home/t3rex/LOAD/uploads/sample.docx
+XML:AppVersion: 15.0
+XML:Application: LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2
+XML:Characters: 47
+XML:CharactersWithSpaces: 53
+XML:CreateDate: 2025:05:18 12:15:01Z
+XML:LastModifiedBy: 
+XML:ModifyDate: 2025:05:18 12:16:58Z
+XML:Pages: 1
+XML:Paragraphs: 1
+XML:RevisionNumber: 1
+XML:Template: 
+XML:TotalEditTime: 1
+XML:Words: 7
+XMP:Creator: 
+XMP:Description: 
+XMP:Language: pl-PL
+XMP:Subject: 
+XMP:Title: 
+ZIP:ZipBitFlag: 2056
+ZIP:ZipCRC: 587321576
+ZIP:ZipCompressedSize: 217
+ZIP:ZipCompression: 8
+ZIP:ZipFileName: _rels/.rels
+ZIP:ZipModifyDate: 2025:05:18 10:16:58
+ZIP:ZipRequiredVersion: 20
+ZIP:ZipUncompressedSize: 573
+

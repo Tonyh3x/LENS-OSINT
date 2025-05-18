@@ -1,0 +1,49 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:22:36
+
+File: /home/t3rex/LOAD/uploads/sample.docx
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:21:35+02:00
+File:FileInodeChangeDate: 2025:05:18 12:22:36+02:00
+File:FileModifyDate: 2025:05:18 12:22:36+02:00
+File:FileName: sample.docx
+File:FilePermissions: 100664
+File:FileSize: 4316
+File:FileType: DOCX
+File:FileTypeExtension: DOCX
+File:MIMEType: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+FileGroup: 1000
+FileHash: 94be8b56db4905e689bbe79a579dc1e0a002c3f1fdb04e4c076cb9c94bacb054
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 4.21 KB
+SourceFile: /home/t3rex/LOAD/uploads/sample.docx
+XML:AppVersion: 15.0
+XML:Application: LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2
+XML:Characters: 47
+XML:CharactersWithSpaces: 53
+XML:CreateDate: 2025:05:18 12:15:01Z
+XML:LastModifiedBy: 
+XML:ModifyDate: 2025:05:18 12:16:58Z
+XML:Pages: 1
+XML:Paragraphs: 1
+XML:RevisionNumber: 1
+XML:Template: 
+XML:TotalEditTime: 1
+XML:Words: 7
+XMP:Creator: 
+XMP:Description: 
+XMP:Language: pl-PL
+XMP:Subject: 
+XMP:Title: 
+ZIP:ZipBitFlag: 2056
+ZIP:ZipCRC: 587321576
+ZIP:ZipCompressedSize: 217
+ZIP:ZipCompression: 8
+ZIP:ZipFileName: _rels/.rels
+ZIP:ZipModifyDate: 2025:05:18 10:16:58
+ZIP:ZipRequiredVersion: 20
+ZIP:ZipUncompressedSize: 573
+

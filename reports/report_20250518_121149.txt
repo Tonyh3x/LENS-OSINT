@@ -1,0 +1,53 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:11:49
+
+File: /home/t3rex/LOAD/uploads/report_20250516_105951.txt
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:11:49+02:00
+File:FileInodeChangeDate: 2025:05:18 12:11:49+02:00
+File:FileModifyDate: 2025:05:18 12:11:49+02:00
+File:FileName: report_20250516_105951.txt
+File:FilePermissions: 100664
+File:FileSize: 19824
+File:FileType: TXT
+File:FileTypeExtension: TXT
+File:LineCount: 562
+File:MIMEEncoding: us-ascii
+File:MIMEType: text/plain
+File:Newlines: 
+
+File:WordCount: 1603
+FileGroup: 1000
+FileHash: 3c81e6b4998d09282949e247f03f471508f3c1614c4fd67492d4c76f0bfdd984
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 19.36 KB
+SourceFile: /home/t3rex/LOAD/uploads/report_20250516_105951.txt
+
+File: /home/t3rex/LOAD/uploads/report_20250516_105657.txt
+
+ExifTool:ExifToolVersion: 12.4
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:16 11:18:49+02:00
+File:FileInodeChangeDate: 2025:05:18 12:11:49+02:00
+File:FileModifyDate: 2025:05:18 12:11:49+02:00
+File:FileName: report_20250516_105657.txt
+File:FilePermissions: 100664
+File:FileSize: 184
+File:FileType: TXT
+File:FileTypeExtension: TXT
+File:LineCount: 9
+File:MIMEEncoding: us-ascii
+File:MIMEType: text/plain
+File:Newlines: 
+
+File:WordCount: 16
+FileGroup: 1000
+FileHash: 4782a7982fc8381d7c9bf3ed21df8de067d130452d24ab4fc3d2f9bf8817c6a9
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 184 B
+SourceFile: /home/t3rex/LOAD/uploads/report_20250516_105657.txt
+

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LENS OSINT ANALYZER DATA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #FF6B00;
+            --primary-dark: #CC5500;
+            --primary-light: #FF8833;
+            --dark-bg: #1a1a1a;
+            --dark-bg-light: #2d2d2d;
+        }
+
+        body {
+            background: url('/static/back.png') no-repeat center center fixed;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            background: var(--dark-bg-light);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            color: white;
+            min-height: 80vh;
+        }
+
+        /* Nowe style dla ikonki załadowania */
+        .upload-status {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: #e0e0e0;
+            display: none;
+        }
+
+        .upload-status.success {
+            color: #28a745;
+        }
+
+        .upload-status.error {
+            color: #dc3545;
+        }
+
+        /* Style dla sekcji */
+        .section {
+            margin-bottom: 40px;
+        }
+
+        /* Style dla przycisków raportów */
+        .report-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .report-buttons button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .report-buttons button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .report-buttons .btn-pdf {
+            background: linear-gradient(135deg, #FF6B00, #CC5500);
+            color: white;
+        }
+
+        .report-buttons .btn-pdf:hover {
+            background: linear-gradient(135deg, #CC5500, #FF6B00);
+        }
+
+        .report-buttons .btn-txt {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+        }
+
+        .report-buttons .btn-txt:hover {
+            background: linear-gradient(135deg, #388E3C, #4CAF50);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .section.hidden {
+            display: none;
+        }
+
+        .section.hidden h2 {
+            display: none;
+        }
+
+        /* Style dla sekcji raportów */
+        #reports {
+            margin-top: 20px;
+        }
+
+        #reports .reports-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #reports .reports-list li {
+            background: var(--dark-bg);
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        #reports .reports-list li a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        #reports .reports-list li a:hover {
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: var(--dark-bg);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            padding: 1.5rem 1rem;
+        }
+
+        .navbar-brand {
+            color: var(--primary-color) !important;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: var(--primary-color) !important;
+            padding: 0.5rem 1rem;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-light) !important;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .drop-zone {
+            border: 2px dashed var(--primary-color);
+            background: var(--dark-bg);
+            color: #e0e0e0;
+            transition: all 0.3s ease;
+            padding: 3rem;
+            text-align: center;
+            border-radius: 10px;
+            margin: 2rem 0;
+            min-height: 250px;
+            cursor: pointer;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .drop-zone.dragover {
+            border-color: var(--primary-dark);
+            background: var(--dark-bg-light);
+            box-shadow: 0 0 10px rgba(255, 107, 0, 0.2);
+        }
+
+        .drop-zone h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .drop-zone p {
+            color: #e0e0e0;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .drop-zone input[type="file"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .navbar-brand img {
+            height: 60px !important;
+            margin-right: 1rem;
+        }
+
+        .navbar-brand span {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card {
+            background: var(--dark-bg);
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        .card-body {
+            color: white;
+        }
+
+        .card-footer {
+            color: white;
+        }
+
+        .card-title {
+            color: var(--primary-color);
+        }
+
+        .card-text {
+            color: #e0e0e0;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        .result-card {
+            margin-bottom: 20px;
+            border: 1px solid var(--primary-color);
+        }
+
+        .result-card:hover {
+            border-color: var(--primary-dark);
+            box-shadow: 0 2px 5px rgba(255, 107, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/static/LOAD_logo_nobg.jpg" alt="LENS Logo" height="60" class="me-2">
+                <span>LENS OSINT ANALYZER DATA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">O nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news">Aktualności</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+            <div class="main-content">
+                <div class="upload-status"></div>
+                
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="drop-zone" id="drop-zone">
+                        <h3>Przeciągnij pliki lub kliknij tutaj</h3>
+                        <p>Obsługiwane formaty: .txt, .doc, .docx, .pdf, .png, .jpg, .bmp</p>
+                        <p>Limit: maksymalnie 5 plików na raz</p>
+                        <input type="file" id="fileInput" name="files[]" multiple accept=".txt,.doc,.docx,.pdf,.png,.jpg,.bmp" class="w-100">
+                    </div>
+                </form>
+
+                <div id="results" class="section hidden">
+                    <div class="report-buttons">
+                        <button class="btn-pdf" onclick="downloadReport('pdf')">
+                            <i class="fas fa-file-pdf"></i> Pobierz PDF
+                        </button>
+                        <button class="btn-txt" onclick="downloadReport('txt')">
+                            <i class="fas fa-file-text"></i> Pobierz TXT
+                        </button>
+                    </div>
+                    <h2 class="section-title">Wyniki analizy</h2>
+                    <div id="resultsContainer"></div>
+                </div>
+
+                <div id="reports" class="section hidden">
+                    <h2>Raporty do pobrania</h2>
+                    <ul class="reports-list" id="reportsList"></ul>
+                </div>
+
+                <div id="errors" class="section hidden">
+                    <h2 class="section-title">Błędy</h2>
+                    <div id="errorList"></div>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        // Zmienna globalna do przechowywania odpowiedzi serwera
+        let serverResponse = null;
+
+        // Elementy DOM
+        let dropZone = document.getElementById('drop-zone');
+        let fileInput = document.getElementById('fileInput');
+        let uploadForm = document.getElementById('uploadForm');
+        let resultsContainer = document.getElementById('resultsContainer');
+        let errorList = document.getElementById('errorList');
+        let reportLinks = document.getElementById('reportLinks');
+        let uploadStatus = document.querySelector('.upload-status');
+        let reportsList = document.getElementById('reportsList');
+
+        // Obsługa przeciągania plików
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, preventDefaults, false);
+        });
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        dropZone.addEventListener('dragover', () => {
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        // Obsługa kliknięcia
+        dropZone.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            fileInput.click();
+            
+            // Resetowanie formularza po kliknięciu
+            dropZone.innerHTML = `
+                <h3>Przeciągnij pliki lub kliknij tutaj</h3>
+                <p>Obsługiwane formaty: .txt, .doc, .docx, .pdf, .png, .jpg, .bmp</p>
+                <p>Limit: maksymalnie 5 plików na raz</p>
+                <input type="file" id="fileInput" name="files[]" multiple accept=".txt,.doc,.docx,.pdf,.png,.jpg,.bmp" class="w-100">
+            `;
+        });
+
+        // Obsługa zmiany plików
+        fileInput.addEventListener('change', (e) => {
+            const files = e.target.files;
+            if (files.length > 5) {
+                alert('Możesz wybrać maksymalnie 5 plików na raz');
+                return;
+            }
+            handleFiles(files);
+        });
+
+        // Obsługa przeciągania
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            dropZone.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 5) {
+                alert('Możesz wybrać maksymalnie 5 plików na raz');
+                return;
+            }
+            handleFiles(files);
+        });
+
+        // Funkcja do obsługi plików
+        async function handleFiles(files) {
+            const formData = new FormData();
+            Array.from(files).forEach(file => {
+                formData.append('files[]', file, file.name);
+            });
+
+            // Funkcja do aktualizacji statusu uploadu
+            function updateUploadStatus(statusText, type = 'info') {
+                uploadStatus.textContent = statusText;
+                uploadStatus.className = `upload-status ${type}`;
+                uploadStatus.style.display = 'block';
+                
+                // Ukryj status po 3 sekundach
+                setTimeout(() => {
+                    uploadStatus.style.display = 'none';
+                }, 3000);
+            }
+
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+                
+                // Zapisz odpowiedź serwera do zmiennej globalnej
+                serverResponse = data;
+                
+                // Wyświetl wyniki
+                displayResults(data.results);
+                displayErrors(data.errors);
+            } catch (error) {
+                console.error('Błąd:', error);
+                dropZone.innerHTML = `
+                    <h3>Przeciągnij pliki lub kliknij tutaj</h3>
+                    <p>Obsługiwane formaty: .txt, .doc, .docx, .pdf, .png, .jpg, .bmp</p>
+                    <input type="file" id="fileInput" multiple accept=".txt,.doc,.docx,.pdf,.png,.jpg,.bmp">
+                `;
+                alert('Wystąpił błąd podczas przetwarzania plików:\n' + error.message);
+            }
+        }
+
+        // Funkcja do pokazywania/ukrywania sekcji
+        function toggleSection(sectionId, show) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.classList.toggle('hidden', !show);
+            }
+        }
+
+        // Funkcja do pobierania raportów
+        function downloadReport(format) {
+            if (!serverResponse) return;
+            
+            const reportPath = format === 'pdf' ? serverResponse.pdf_report : serverResponse.txt_report;
+            if (reportPath) {
+                // Sprawdź, czy ścieżka jest bezwzględna
+                if (!reportPath.startsWith('/')) {
+                    // Dodaj ścieżkę bazową
+                    const basePath = window.location.pathname;
+                    const reportUrl = basePath + reportPath;
+                    window.open(reportUrl, '_blank');
+                } else {
+                    window.open(reportPath, '_blank');
+                }
+            }
+        }
+
+        // Funkcja do wyświetlania wyników
+        function displayResults(results) {
+            if (resultsContainer) {
+                resultsContainer.innerHTML = '';
+                if (results.length > 0) {
+                    results.forEach(result => {
+                        const card = document.createElement('div');
+                        card.className = 'card mb-3';
+                        
+                        // Sortowanie kluczy alfabetycznie
+                        const keys = Object.keys(result).sort();
+                        
+                        // Formatowanie rozmiaru pliku
+                        const formatFileSize = (size) => {
+                            if (size >= 1073741824) return `${(size/1073741824).toFixed(2)} GB`;
+                            if (size >= 1048576) return `${(size/1048576).toFixed(2)} MB`;
+                            if (size >= 1024) return `${(size/1024).toFixed(2)} KB`;
+                            return `${size} B`;
+                        };
+                        
+                        // Tworzenie HTML dla każdego klucza
+                        const items = keys.map(key => {
+                            if (key === 'FileSize') {
+                                return `<li class="list-group-item">
+                                    <strong>${key}:</strong> ${formatFileSize(result[key])}
+                                </li>`;
+                            }
+                            return `<li class="list-group-item">
+                                <strong>${key}:</strong> ${result[key]}
+                            </li>`;
+                        }).join('');
+                        
+                        card.innerHTML = `
+                            <div class="card-header">
+                                <h5 class="card-title mb-0">${result.SourceFile}</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    ${items}
+                                </ul>
+                                <div class="card-footer">
+                                    <small class="text-muted">Analizowane: ${new Date().toLocaleString()}</small>
+                                </div>
+                            </div>
+                        `;
+                        resultsContainer.appendChild(card);
+                    });
+                    
+                    // Pokaż sekcję wyników
+                    toggleSection('results', true);
+                } else {
+                    // Ukryj sekcję wyników jeśli nie ma wyników
+                    toggleSection('results', false);
+                }
+            }
+        }
+
+        // Funkcja do wyświetlania raportów
+        function displayReports(reports) {
+            if (reportsList) {
+                reportsList.innerHTML = '';
+                if (reports && reports.length > 0) {
+                    reports.forEach(report => {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = report.url;
+                        a.textContent = report.name;
+                        a.target = '_blank';
+                        li.appendChild(a);
+                        reportsList.appendChild(li);
+                    });
+                    
+                    // Pokaż sekcję raportów
+                    toggleSection('reports', true);
+                } else {
+                    // Ukryj sekcję raportów jeśli nie ma raportów
+                    toggleSection('reports', false);
+                }
+            }
+        }
+
+        // Funkcja do wyświetlania błędów
+        function displayErrors(errors) {
+            if (errorList) {
+                if (errors && errors.length > 0) {
+                    errorList.innerHTML = `
+                        <div class="alert alert-danger">
+                            ${errors.join('<br>')}
+                        </div>
+                    `;
+                    toggleSection('errors', true);
+                } else {
+                    errorList.innerHTML = '';
+                    toggleSection('errors', false);
+                }
+            }
+        }
+
+        // Funkcja do wyświetlania błędów
+        function displayErrors(errors) {
+            if (errorList) {
+                errorList.innerHTML = '';
+                if (errors.length > 0) {
+                    errors.forEach(error => {
+                        const li = document.createElement('li');
+                        li.textContent = error;
+                        errorList.appendChild(li);
+                    });
+                } else {
+                    // Ukryj sekcję błędów jeśli nie ma błędów
+                    errorList.parentElement.style.display = 'none';
+                }
+            }
+        }
+
+        // Funkcja do wyświetlania raportów
+        function displayReports(reports) {
+            if (reportsList) {
+                reportsList.innerHTML = '';
+                if (reports && reports.length > 0) {
+                    reports.forEach(report => {
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = report.url;
+                        a.textContent = report.name;
+                        a.target = '_blank';
+                        li.appendChild(a);
+                        reportsList.appendChild(li);
+                    });
+                    
+                    // Pokaż sekcję raportów
+                    document.getElementById('reports').style.display = 'block';
+                }
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

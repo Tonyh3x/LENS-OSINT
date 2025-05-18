@@ -1,0 +1,29 @@
+LENS OSINT ANALYZER DATA REPORT
+Generated: 2025-05-18 12:22:23
+
+File: /home/t3rex/LOAD/uploads/sample.txt
+
+ExifTool:ExifToolVersion: 12.4
+File:ByteOrderMark: 1
+File:Directory: /home/t3rex/LOAD/uploads
+File:FileAccessDate: 2025:05:18 12:21:34+02:00
+File:FileInodeChangeDate: 2025:05:18 12:22:23+02:00
+File:FileModifyDate: 2025:05:18 12:22:23+02:00
+File:FileName: sample.txt
+File:FilePermissions: 100664
+File:FileSize: 59
+File:FileType: TXT
+File:FileTypeExtension: TXT
+File:LineCount: 1
+File:MIMEEncoding: utf-8
+File:MIMEType: text/plain
+File:Newlines: 
+
+File:WordCount: 7
+FileGroup: 1000
+FileHash: c6479f241bfdfd4f8654b33092f6b0b2590f513a1560f7fdeadeb22546b486d3
+FileOwner: 1000
+FilePermissions: 0o664
+FileSize: 59 B
+SourceFile: /home/t3rex/LOAD/uploads/sample.txt
+
